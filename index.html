@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Anime-Con</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+
+    <body>
+        <div id='home'>
+            <header>
+                <img id='logo' src='assets/images/anime_l.jpg' alt="logo">
+                <h1>Anime-Con</h1>
+            </header>
+
+            <nav>
+                <ul id='navigantion_bar'>
+                    <li class='nav_item'><a href="index.html">Home</a></li>
+                    <li class='nav_item'><a href="item.html">Items!</a></li>
+                    <li class='nav_item'><a href="contact.html">Contact</a></li>
+                    <li class='nav_item'><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+
+            <div id='java'>
+                <script>
+                    var releaseDate = new Date('Dec 25, 2021 0:00:00').getTime();
+                    var time = setInterval(function(){
+                        var now = new Date().getTime();
+                        var timePeriod = releaseDate - now;
+                        var days = Math.floor(timePeriod / (1000 * 60 * 60 * 24));
+                        var hrs = Math.floor((timePeriod % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var min = Math.floor((timePeriod % (1000 * 60 * 60)) / (1000 * 60));
+    
+                        document.getElementById('java').innerHTML = 'Sale Ends in: ' + days + ' days ' + hrs + ' hours and ' + min + ' minutes';
+                        
+                        if (timePeriod < 0) {
+                            clearInterval(time);
+                            document.getElementById('java').innerHTML = 'Sale has ended!';
+                        }
+                    }, 1000);
+                </script>
+            </div>
+        </div>
+
+        <div id='posters'>
+            <img id='poster' src='assets/images/anime_main_image.jpg' alt="Haikyuu Official Poster">
+        </div>
+
+        <div id='detail'>
+            <div id='synopsis'>
+                <h4>HAIKYU!</h4>
+                <h5>Our best selling show! Price: $3.99</h5>
+                <p>Inspired after watching a volleyball ace nicknamed "Little Giant" in action, small-statured Shouyou Hinata revives the volleyball club at his middle school. The newly-formed team even makes it to a tournament; however, their first match turns out to be their last when they are brutally squashed by the "King of the Court," Tobio Kageyama. Hinata vows to surpass Kageyama, and so after graduating from middle school, he joins Karasuno High School's volleyball team—only to find that his sworn rival, Kageyama, is now his teammate. 
+                   Thanks to his short height, Hinata struggles to find his role on the team, even with his superior jumping power. Surprisingly, Kageyama has his own problems that only Hinata can help with, and learning to work together appears to be the only way for the team to be successful. Based on Haruichi Furudate's popular shounen manga of the same name, Haikyuu!! is an exhilarating and emotional sports comedy following two determined athletes as they attempt to patch a heated rivalry in order to make their high school volleyball team the best in Japan.</p>
+            </div>
+            <img id='haikyuu_anotherone' src='assets/images/haikyuu_anotherone.jpg' alt="haikyuu">
+        </div>
+
+        <div id='reviews'>
+            <p id='r1'>"To be honest, I'm guilty of being biased and judgemental, and more than once to boot. A few years ago I had seen my friend's collection of Naruto manga. I scoffed and even teased him a bit, having seen what appeared to be ridiculous anime promos on TV aimed at children. Within a year, I had discovered anime and manga myself. I have since apologized. "</p>
+            <div id='r2and3'>
+                <p id='r2'>Haikyuu!!, or High Jump in English, is about Hinata and Kageyama, two players who originally stand at the opposite side of the volleyball net. </p>
+                <p id='r3'>THE BEST SHOW EVER!!! I just keep rewatching it again and again!</p>
+            </div>
+        </div>
+
+        <div id='edit'>
+            <video id='haikyuu' controls poster='haikyuu_edit.mp4'>
+                <source src='assets/media/haikyuu_edit.mp4' type='video/mp4'>
+            </video>
+        </div>
+        
+        <h3>Other Famous Shows</h3>
+        <div class='normal'>
+            Hover over the show to know more!
+        </div>
+
+        <div id='showss'>
+            <div id='h'>
+                <img class='anime_show' src='assets/images/attackontitan.jpg' alt="attack_on_titan" width='200' height='300'>
+                <div class='anime_discription1'>
+                    When man-eating Titans first appeared 100 years ago, humans found safety behind massive walls that stopped the giants in their tracks. But the safety they have had for so long is threatened when a colossal Titan smashes through the barriers, causing a flood of the giants into what had been the humans' safe zone. During the carnage that follows, soldier Eren Jaeger sees one of the creatures devour his mother, which leads him to vow that he will kill every Titan. He enlists some friends who survived to help him, and that group is humanity's last hope for avoiding extinction at the hands of the monsters.
+                </div>
+                <p>Attack On Titan</p>
+                <p>Price: $2.99</p>
+            </div>
+
+            <div id='d'>
+                <img class='anime_show' src='assets/images/deathnote.jpg' alt="deathnote" width='200' height='300'>
+                <div class='anime_discription2'>
+                    The story follows Light Yagami, a teen genius who discovers a mysterious notebook: the "Death Note", which belonged to the Shinigami Ryuk, and grants the user the supernatural ability to kill anyone whose name is written in its pages. The series centers around Light's subsequent attempts to use the Death Note to carry out a worldwide massacre of individuals whom he deems immoral and to create a crime-free society, using the alias of a god-like vigilante named "Kira", and the subsequent efforts of an elite Japanese police task force, led by enigmatic detective L, to apprehend him. 
+                </div>
+                <p>Deathnote</p>
+                <p>Price: $0.99</p>
+            </div>
+
+            <div id='m'>
+                <img class='anime_show' src='assets/images/naruto.jpg' alt="naruto" width='200' height='300'>
+                <div class='anime_discription3'>
+                    Naruto is a Japanese manga series written and illustrated by Masashi Kishimoto. It tells the story of Naruto Uzumaki, a young ninja who seeks recognition from his peers and dreams of becoming the Hokage, the leader of his village.
+                </div>
+                <p>Naruto</p>
+                <p>Price: $3.99</p>
+            </div>
+
+            <div id='c'>
+                <img class='anime_show' src='assets/images/kuruko.jpg' alt="kuruko no basket" width='200' height='300'>
+                <div class='anime_discription4'>
+                    A legendary 6th player. An up-and-coming power player, Taiga Kagami, is just back from America. When he comes to Seirin High School, he meets the super-ordinary boy, Tetsuya Kuroko. Kagami is shocked to find that Kuroko isn't good at basketball, in fact, he's bad!
+                </div>
+                <p>Kuruko No Basket</p>
+                <p>Price: $2.99</p>
+            </div>
+
+            <div id='z'>
+                <img class='anime_show' src='assets/images/classroomofelite.png' alt="classroom of the elite" width='200' height='300'>
+                <div class='anime_discription5'>
+                    The story follows the perspective of Kiyotaka Ayanokōji, a quiet and unassuming boy who is not good at making friends and would rather keep his distance, but possesses unrivaled intelligence. He is a student of Class-D, which is where the school dumps its inferior students. After meeting Suzune Horikita and Kikyō Kushida, two other students in his class, Kiyotaka's situation begins to change and he starts to get involved in many affairs, and his thought of ideal normal high school life begins to get scattered.
+                </div>
+                <p>Classroom Of the Elite</p>
+                <p>Price: $4.99</p>
+            </div>
+
+            <div id='s'>
+                <img class='anime_show' src='assets/images/demonslayer.jpg' alt="demonslayer" width='200' height='300'>
+                <div class='anime_discription6'>
+                    A boy raised by boars, who wears a boar's head, boards the Infinity Train on a new mission with the Flame Pillar along with another boy who reveals his true power when he sleeps. Their mission is to defeat a demon who has been tormenting people and killing the demon slayers who oppose it.
+                </div>
+                <p>Demon Slayer</p>
+                <p>Price: $3.99</p>
+            </div>
+
+            <div id='f'>
+                <img class='anime_show' src='assets/images/jujutusu.jpg' alt="jujutsu kaisen" width='200' height='300'>
+                <div class='anime_discription7'>
+                    Yuji Itadori is a boy with tremendous physical strength, though he lives a completely ordinary high school life. One day, to save a friend who has been attacked by cursed spirits, he eats the finger of Sukuna, taking the curse into his own soul. From then on, he shares one body with the King of Curses. Guided by the most powerful of jujutsu sorcerers, Satoru Gojo, Yuji is admitted to the Tokyo Jujutsu High School of Sorcery, an organization that exorcises the curses... and thus begins the heroic tale of a boy who became a curse to fight curses, a life from which he could never turn back.
+                </div>
+                <p>Jujutsu Kaisen</p>
+                <p>Price: $4.99</p>
+            </div>
+
+            <div id='t'>
+                <img class='anime_show' src='assets/images/blue.jpeg' alt="Blue Exorcist" width='200' height='300'>
+                <div class='anime_discription8'>
+                    Human and demons reside in different realms -- Assiah and Gehenna, respectively -- that usually don't intersect. But now, demons are starting to enter the tangible world of the human race and must be culled. Thankfully, there are people who can exorcise them. Rin Okumura, a young man of strange origins and exceptional power, sets out to rid the world of the evil spirits in an effort to be the ultimate exorcist and hero. Accomplishing that would mean defeating his own father, Satan.
+                </div>
+                <p>Blue Exorcist</p>
+                <p>Price: $4.99</p>
+            </div>
+
+            <div id='fa'>
+                <img class='anime_show' src='assets/images/onepiece.jpg' alt="one piece" width='200' height='300'>
+                <div class='anime_discription9'>
+                    Monkey D. Luffy wants to become the King of all pirates. Along his quest he meets: a skilled swordsman named Roronoa Zolo; Nami, a greedy thief who has a knack for navigation; Usopp, a great liar who has an affinity for inventing; Sanji, a warrior cook; Chopper, a sentient deer who is also a skilled physician; and Robin, former member of Baroque Works. The gang sets sail to unknown seas in Grand Line to find the treasure of One Piece.
+                </div>
+                <p>One Piece</p>
+                <p>Price: $1.99</p>
+            </div>
+
+            <div id='b'>
+                <img class='anime_show' src='assets/images/jojos.jpeg' alt="Jojos Bizzare Adventure" width='200' height='300'>
+                <div class='anime_discription10'>
+                    The story of the Joestar family, who are possessed with intense psychic strength, and the adventures each member encounters throughout their lives. Chronicles the struggles of the cursed Joestar bloodline against the forces of evil.
+                </div>
+                <p>JoJO's Bizzara Adventure</p>
+                <p>Price: $1.99</p>
+            </div>
+
+            <div id='sa'>
+                <img class='anime_show' src='assets/images/fullmental.jpg' alt="Fullmental Alchemist" width='200' height='300'>
+                <div class='anime_discription11'>
+                    Set in the early 20th century, in a fictional universe in which alchemy is a widely practiced science, the series follows the journey of two alchemist brothers, Edward and Alphonse Elric, who are searching for the philosopher's stone to restore their bodies after a failed attempt to bring their mother back to life.
+                </div>
+                <p>Fullmental Alchemist</p>
+                <p>Price: $2.99</p>
+            </div>
+
+            <div id='r'>
+                <img class='anime_show' src='assets/images/dragon.jpg' alt="Dragon Ball Z" width='200' height='300'>
+                <div class='anime_discription12'>
+                    Dragon Ball tells the tale of a young warrior by the name of Son Goku, a young peculiar boy with a tail who embarks on a quest to become stronger and learns of the Dragon Balls, when, once all 7 are gathered, grant any wish of choice.
+                </div>
+                <p>Dragon Ball Z</p>
+                <p>Price: $3.99</p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,366 @@
+body{
+    margin: 0;
+    color: seashell;
+    background-color: black;
+}
+
+header{
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+    padding-top: 15px;
+    font-family: copperplate, monospace;
+    color: #EDF5E1;
+    padding-bottom: 15px;
+    margin: 0;
+}
+
+#logo{
+    float: left;
+    padding-left: 15px;
+    max-width: 120px;
+    max-height: 89px;
+}
+
+nav{
+    background-color: darkgoldenrod;
+    margin: 0px;
+    width: 100%;
+}
+
+.navigantion_bar{
+    list-style-type: none;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.nav_item{
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: copperplate, monospace;
+    text-align: center;
+    font-size: 15px;
+    width: 20%;
+}
+
+ul{
+    margin: 0;
+    padding-left: 0;
+}
+
+/*     Timer     */
+
+#java{
+    text-align: center;
+    font-family: copperplate, monospace;
+    font-size: 25px;
+    color: #EDF5E1;
+    background-color: #5CDB96;
+    padding-top: 10px;
+}
+
+
+#home{
+    z-index: 5;
+    background: #5CDB96;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+/* Hovering */
+/* #h{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 10px;
+   } */
+   
+
+.anime_discription1, .anime_discription2, .anime_discription3, .anime_discription4, .anime_discription5, .anime_discription6, .anime_discription7, .anime_discription8, .anime_discription9, .anime_discription10, .anime_discription11, .anime_discription12{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #5CDB96;
+    color: black;
+    font-size: smaller;
+    margin-bottom: 10px;
+    font-family: copperplate, monospace;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+}
+   
+
+#h, #d, #m, #c, #z, #s, #f, #t, #fa, #b, #sa, #r:hover{
+    cursor: pointer;
+}
+   
+#h:hover .anime_discription1{
+    width: 210px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 1; 
+}
+#d:hover .anime_discription2{
+    width: 210px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 1; 
+}
+#m:hover .anime_discription3{
+    width: 210px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 1; 
+}
+#c:hover .anime_discription4{
+    width: 210px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 1; 
+}
+#z:hover .anime_discription5{
+    width: 210px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 1; 
+}
+#s:hover .anime_discription6{
+    width: 210px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 1; 
+}
+#f:hover .anime_discription7{
+    width: 210px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 1; 
+}
+#t:hover .anime_discription8{
+    width: 210px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 1; 
+}
+#fa:hover .anime_discription9{
+    width: 210px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 1; 
+}
+#b:hover .anime_discription10{
+    width: 210px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 1; 
+}
+#sa:hover .anime_discription11{
+    width: 210px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 1; 
+}
+#r:hover .anime_discription12{
+    width: 210px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 1; 
+}
+
+/* hovering done */
+
+#synopsis{
+    color: sandybrown;
+    font-family: copperplate, monospace;
+    text-align: left;
+    font-size: 20px;
+    max-width: 100%;
+    margin-left: 3%;
+    margin-right: 2%;
+    float: left;
+}
+
+h4{
+    font-size: 30px;
+}
+
+
+/*     Poster     */
+
+#poster{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+}
+
+#posters{
+    width: 13%;
+    padding-top: 2%;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: right;
+    transition: width 3s, margin-left 3s, margin-right 3s, padding-top 3s;
+}
+
+#haikyuu_anotherone{
+    display: none;
+    margin: 0;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    float: left;
+    transition: margin-top 2s;
+    transition-timing-function: ease-in;
+}
+
+#posters:hover {
+    width: 30%;
+    margin-left: 0;
+    margin-right: 2%;
+    padding-top: 2%;
+}
+
+#posters:hover + #detail{
+    width: 60%;
+    margin-left: 2%;
+    margin-right: 0;
+    display: block;
+}
+
+#posters:hover + #detail > #haikyuu_anotherone{
+    display: block;
+    margin-top: 10%;
+}
+
+#detail{
+    max-width: 85%;
+}
+
+
+#reviews{
+    margin-left: 40px;
+    padding: 0;
+    font-size: 20px;
+    color:tan;
+    font-style: copperplate, monospace;
+}
+
+#r1{
+    max-width: 1200px;
+    margin: 0;
+    width: 100%;
+    clear: both;
+    text-align: center;
+}
+
+#r2{
+    max-width: 600px;
+    padding-left: 1%;
+    width: 48%;
+    float: left;
+    text-align: center;
+}
+
+#r3{
+    max-width: 600px;
+    padding-right: 1%;
+    width: 48%;
+    float: right;
+    text-align: center;
+}
+
+#r2and3{
+    max-width: 1200px;
+}
+
+#r1{
+    margin-top: 5%;
+}
+
+#edit{
+    margin-top: 1%;
+    
+}
+
+#haikyuu{
+    width: 95%;
+    display:block;
+    margin: auto;
+}
+
+h3{
+    font-family: copperplate, monospace;
+    font-size: 30px;
+    text-align: center;
+}
+
+.normal{
+    font-family: copperplate, monospace;
+    font-size: 15px;
+    text-align: center;
+}
+
+#showss{
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas:    'h d m c'
+                            'z s f t'
+                            'fa b sa r';
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#h, #d, #m, #c, #z, #s, #f, #t, #fa, #b, #sa, #r{
+    position: relative;
+    padding: 2%;
+    text-align: center;
+}
+
+.anime_show{
+    max-width: 100%;
+}
+
+/* Tab Size */
+
+@media  screen and (max-width: 950px) {
+
+    #showss{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-areas:    'h d m'
+                                'c z s'
+                                'f t fa' 
+                                'b sa r';
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}
+
+
+/* Phones Size */
+
+@media  screen and (max-width: 800px) {
+
+    #showss{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:    'h d'
+                                'm c'
+                                'z s'
+                                'f t'
+                                'fa b' 
+                                'sa r';
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}
