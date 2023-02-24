@@ -42,3 +42,16 @@ IPad Version:
 
 Iphone version:
 ![Iphone-Version](https://github.com/sahildayal/Anime-con/blob/main/pic/5.png)
+
+
+
+
+
+
+
+
+
+
+
+Image of the JavaScript that I used to keep a timer for 25th December Christmas Sale for the shows, which has passed now!
+![JS-Version](https://github.com/sahildayal/Anime-con/blob/main/pic/6.png)
